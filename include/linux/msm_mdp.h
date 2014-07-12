@@ -17,6 +17,9 @@
 
 #include <uapi/linux/msm_mdp.h>
 
+/* let users know that we have the new struct formats */
+#define DUAL_DSI
+
 int msm_fb_get_iommu_domain(struct fb_info *info, int domain);
 /* get the framebuffer physical address information */
 int get_fb_phys_info(unsigned long *start, unsigned long *len, int fb_num,
